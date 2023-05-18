@@ -5,72 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Transitions</title>
-    <style>
-      .box {
-        text-align: center;
-        height: 100px;
-        width: 100px;
-        background-color: aqua;
-        transition: margin-left 10s;
-        /* same as transition-property and transition-duration: */
-      }
-      .box:hover {
-        margin-left: 500px;
+    <style> 
+      #box1 {
+        background-color:red;
+        width:100px;
+        height:100px;
+        transition-duration:20s;
+        transition-delay:5s;
+        transition-property:background-color;
+        transition-property:font-size;
       }
 
-      /* transform using rotation */
-      .box2 {
-        text-align: center;
-        height: 100px;
-        width: 100px;
-        background-color: rgb(43, 255, 0);
-        transition: transform 3s;
-      }
-      .box2:hover {
-        height: 100px;
-        width: 100px;
-        background-color: rgb(255, 250, 192);
-        transform: rotate(360deg);
-      }
-      /* transform using scale */
-      .box3 {
-        text-align: center;
-        height: 100px;
-        width: 100px;
-        background-color: rgb(255, 0, 0);
-        transition: transform 3s;
-      }
-      .box3:hover {
-        height: 100px;
-        width: 100px;
-        background-color: rgba(235, 33, 103, 0.452);
-        transform: scale(1.5);
+      #box1:hover {
+       transform:translate(100px,100px) rotate(350deg);
+        background-color:yellow;
+        font-size:20pt;
       }
     </style>
   </head>
   <body>
-    <div>
-      <h1>Transitions(margin-left)</h1>
-      <div class="box">
-        <p>Transition</p>
-        <br />
-        <p>*margin-left*</p>
-      </div>
+    <div id="box1">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ipsam nulla ea, quos ratione, earum dolore, a nisi deserunt expedita quas ex quibusdam nostrum placeat odit dignissimos ad inventore id.
       <br />
-      <!-- transform -->
-      <h1>Transform(rotate)</h1>
-      <div class="box2">
-        <p>Transform</p>
-        <br />
-        <p>*rotate*</p>
-      </div>
       <br />
-      <h1>Transform(scale)</h1>
-      <div class="box3">
-        <p>Transform</p>
-        <br />
-        <p>*scale*</p>
-      </div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam veniam placeat inventore repudiandae eligendi iusto quo minus enim minima officia aspernatur vel, nihil animi neque. Et accusantium nemo vitae labore.
+      <br />
+      <br />
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores magnam pariatur facere molestiae vel aliquid aliquam ducimus aspernatur et incidunt dolore modi debitis laboriosam nam commodi, corrupti quo adipisci error.
+
     </div>
   </body>
 </html>
