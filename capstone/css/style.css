@@ -1,0 +1,14 @@
+/* body, html {
+    min-width:100%;
+    min-height:100vh;
+    margin:0;
+} */
+.carousel {
+    width:40%;
+    height:30%;
+  }
+
+img {
+    height:10%;
+    width:10%;
+  }
